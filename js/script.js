@@ -14,80 +14,80 @@ let nextBtn = document.getElementsByClassName('fa-step-forward')[0];
 let songs = [
   {
     songName: 'Warriyo - Mortals (feat. Laura Brehm)',
-    filePath: '../songs/1.mp3',
-    coverPath: '../covers/1.jpg',
+    filePath: 'https://github.com/rionislam/spotify_clone/blob/main/songs/1.mp3',
+    coverPath: 'https://github.com/rionislam/spotify_clone/blob/main/covers/1.jpg',
     album: 'NCS Release',
     duration: '3:50',
     dateAdded: '15/12/2016',
   },
   {
     songName: 'Cielo – Huma-Huma',
-    filePath: '../songs/2.mp3',
-    coverPath: '../covers/2.jpg',
+    filePath: 'https://github.com/rionislam/spotify_clone/blob/main/songs/2.mp3',
+    coverPath: 'https://github.com/rionislam/spotify_clone/blob/main/covers/2.jpg',
     album: 'No Copyright Music',
     duration: '2:34',
     dateAdded: '09/03/2015',
   },
   {
     songName: 'DEAF KEV - Invincible',
-    filePath: '../songs/3.mp3',
-    coverPath: '../covers/3.jpg',
+    filePath: 'https://github.com/rionislam/spotify_clone/blob/main/songs/3.mp3',
+    coverPath: 'https://github.com/rionislam/spotify_clone/blob/main/covers/3.jpg',
     album: 'NCS Release',
     duration: '4:34',
     dateAdded: '14/05/2015',
   },
   {
     songName: 'Different Heaven & EH!DE - My Heart',
-    filePath: '../songs/4.mp3',
-    coverPath: '../covers/4.jpg',
+    filePath: 'https://github.com/rionislam/spotify_clone/blob/main/songs/4.mp3',
+    coverPath: 'https://github.com/rionislam/spotify_clone/blob/main/covers/4.jpg',
     album: 'NCS Release',
     duration: '4:28',
     dateAdded: '13/11/2013',
   },
   {
     songName: 'Janji - Heroes Tonight (feat. Johnning)',
-    filePath: '../songs/5.mp3',
-    coverPath: '../covers/5.jpg',
+    filePath: 'https://github.com/rionislam/spotify_clone/blob/main/songs/5.mp3',
+    coverPath: 'https://github.com/rionislam/spotify_clone/blob/main/covers/5.jpg',
     album: 'NCS Release',
     duration: '3:29',
     dateAdded: '09/06/2015',
   },
   {
     songName: 'Janji - Heroes Tonight (feat. Johnning)',
-    filePath: '../songs/6.mp3',
-    coverPath: '../covers/6.jpg',
+    filePath: 'https://github.com/rionislam/spotify_clone/blob/main/songs/6.mp3',
+    coverPath: 'https://github.com/rionislam/spotify_clone/blob/main/covers/6.jpg',
     album: 'NCS Release',
     duration: '3:29',
     dateAdded: '09/06/2015',
   },
   {
     songName: 'DEAF KEV - Invincible',
-    filePath: '../songs/7.mp3',
-    coverPath: '../covers/7.jpg',
+    filePath: 'https://github.com/rionislam/spotify_clone/blob/main/songs/7.mp3',
+    coverPath: 'https://github.com/rionislam/spotify_clone/blob/main/covers/7.jpg',
     album: 'NCS Release',
     duration: '4:34',
     dateAdded: '14/05/2015',
   },
   {
     songName: 'Warriyo - Mortals (feat. Laura Brehm)',
-    filePath: '../songs/8.mp3',
-    coverPath: '../covers/8.jpg',
+    filePath: 'https://github.com/rionislam/spotify_clone/blob/main./songs/8.mp3',
+    coverPath: 'https://github.com/rionislam/spotify_clone/blob/main/covers/8.jpg',
     album: 'NCS Release',
     duration: '3:50',
     dateAdded: '15/12/2016',
   },
   {
     songName: 'Janji - Heroes Tonight (feat. Johnning)',
-    filePath: '../songs/9.mp3',
-    coverPath: '../covers/9.jpg',
+    filePath: 'https://github.com/rionislam/spotify_clone/blob/main/songs/9.mp3',
+    coverPath: 'https://github.com/rionislam/spotify_clone/blob/main/covers/9.jpg',
     album: 'NCS Release',
     duration: '3:29',
     dateAdded: '09/06/2015',
   },
   {
     songName: 'Different Heaven & EH!DE - My Heart ',
-    filePath: '../songs/10.mp3',
-    coverPath: '../covers/10.jpg',
+    filePath: 'https://github.com/rionislam/spotify_clone/blob/main/songs/10.mp3',
+    coverPath: 'https://github.com/rionislam/spotify_clone/blob/main/covers/10.jpg',
     album: 'NCS Release',
     duration: '4:28',
     dateAdded: '13/11/2013',
@@ -157,7 +157,7 @@ mySoundBar.addEventListener('input', () => {
 songPlayBtn.addEventListener('click', () => {
   if (audioElement.paused || audioElement.currentTime <= 0) {
     audioElement.play();
-    songPlayBtn.src = '../svg/pause-circle-solid.svg';
+    songPlayBtn.src = 'https://github.com/rionislam/spotify_clone/blob/main/svg/pause-circle-solid.svg';
     if (audioElement.volume == 0) {
       audioElement.volume = 0.1;
       document.getElementById('volume').style.width = '10%';
@@ -167,7 +167,7 @@ songPlayBtn.addEventListener('click', () => {
     }
   } else {
     audioElement.pause();
-    songPlayBtn.src = '../svg/play-circle-solid.svg';
+    songPlayBtn.src = 'https://github.com/rionislam/spotify_clone/blob/main/svg/play-circle-solid.svg';
   }
 });
 
@@ -186,7 +186,7 @@ volume.addEventListener('click', () => {
     volume.innerHTML =
       '<path fill="currentColor" d="M215.03 71.05L126.06 160H24c-13.26 0-24 10.74-24 24v144c0 13.25 10.74 24 24 24h102.06l88.97 88.95c15.03 15.03 40.97 4.47 40.97-16.97V88.02c0-21.46-25.96-31.98-40.97-16.97zM461.64 256l45.64-45.64c6.3-6.3 6.3-16.52 0-22.82l-22.82-22.82c-6.3-6.3-16.52-6.3-22.82 0L416 210.36l-45.64-45.64c-6.3-6.3-16.52-6.3-22.82 0l-22.82 22.82c-6.3 6.3-6.3 16.52 0 22.82L370.36 256l-45.63 45.63c-6.3 6.3-6.3 16.52 0 22.82l22.82 22.82c6.3 6.3 16.52 6.3 22.82 0L416 301.64l45.64 45.64c6.3 6.3 16.52 6.3 22.82 0l22.82-22.82c6.3-6.3 6.3-16.52 0-22.82L461.64 256z"></path>';
     audioElement.pause();
-    songPlayBtn.src = '../svg/play-circle-solid.svg';
+    songPlayBtn.src = 'https://github.com/rionislam/spotify_clone/blob/main/svg/play-circle-solid.svg';
   }
 });
 
@@ -221,7 +221,7 @@ previousBtn.addEventListener('click', () => {
   }
   makeAllUnactive();
   songItems[index].classList.add('active');
-  songPlayBtn.src = '../svg/pause-circle-solid.svg';
+  songPlayBtn.src = 'https://github.com/rionislam/spotify_clone/blob/main/svg/pause-circle-solid.svg';
   document.getElementById('cover').src = songs[index].coverPath;
   document.getElementById('songName').innerHTML = songs[index].songName;
   document.getElementById('duration').innerHTML = songs[index].duration;
@@ -241,7 +241,7 @@ nextBtn.addEventListener('click', () => {
   }
   makeAllUnactive();
   songItems[index].classList.add('active');
-  songPlayBtn.src = '../svg/pause-circle-solid.svg';
+  songPlayBtn.src = 'https://github.com/rionislam/spotify_clone/blob/main/svg/pause-circle-solid.svg';
   document.getElementById('cover').src = songs[index].coverPath;
   document.getElementById('songName').innerHTML = songs[index].songName;
   document.getElementById('duration').innerHTML = songs[index].duration;
