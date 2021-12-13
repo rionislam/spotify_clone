@@ -4,7 +4,7 @@
 let myProgressBar = document.getElementById('myProgressBar');
 let mySoundBar = document.getElementById('mySoundBar');
 let songPlayBtn = document.getElementById('songPlayBtn');
-let audioElement = new Audio('../songs/1.mp3');
+let audioElement = new Audio('./songs/1.mp3');
 let volume = document.getElementById('fa-volume-up');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 let songItem = document.getElementsByClassName('songItem');
