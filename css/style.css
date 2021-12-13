@@ -1,0 +1,445 @@
+/** @format */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: black;
+  color: white;
+  width: 13vw;
+  height: 100vh;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0 12px;
+}
+
+nav ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.685);
+  transition: all 0.2s ease;
+}
+
+nav ul li:hover {
+  color: white;
+}
+
+svg {
+  height: 23px;
+  align-items: center;
+  padding: 0 14px;
+  transition: all 0.2s ease;
+}
+
+svg:hover {
+  color: white;
+}
+
+img {
+  height: 23px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-family: 'Varela', sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 24px 6px;
+  color: white;
+}
+
+.brand svg {
+  height: 40px;
+  padding: 0 7px;
+}
+
+.container {
+  display: flex;
+  max-height: 100vh;
+}
+
+.main {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  padding-bottom: 90px;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+}
+
+.banner {
+  height: 40vh;
+  width: 87vw;
+  background-image: url(../bg.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.top {
+  height: 50px;
+}
+
+.bottom {
+  font-family: 'Varela', sans-serif;
+  color: white;
+  font-weight: bolder;
+  margin-left: 20px;
+  margin-top: 100px;
+}
+
+.playlistName {
+  font-size: 88px;
+}
+
+.bottom div {
+  margin: 10px 0;
+}
+
+.details span {
+  color: rgba(255, 255, 255, 0.685);
+}
+
+.topPart {
+  color: rgba(255, 255, 255, 0.685);
+  background: rgb(29, 38, 48);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(29, 38, 48, 1) 0%,
+    rgba(22, 26, 30, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(29, 38, 48, 1) 0%,
+    rgba(22, 26, 30, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(29, 38, 48, 1) 0%,
+    rgba(22, 26, 30, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d2630",endColorstr="#161a1e",GradientType=1);
+}
+
+.header {
+  height: 100px;
+  width: 86vw;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.header svg {
+  height: 30px;
+}
+
+.header .songItemPlay {
+  height: 60px;
+  color: #1db954;
+}
+
+.listTop {
+  display: flex;
+  margin: 0 30px;
+  padding: 0 15px;
+  height: 50px;
+  align-items: center;
+  font-size: 12px;
+  font-family: 'Varela', sans-serif;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.103);
+}
+
+.index,
+.indexTop {
+  width: 1.5vw;
+  font-size: 15px;
+}
+
+.index svg {
+  height: 10px;
+  padding: 0;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.103);
+  border-radius: 6px;
+}
+
+.active .index,
+.active .songName {
+  color: #1db954;
+}
+
+.title {
+  width: 34vw;
+  display: flex;
+  align-items: center;
+}
+
+.album,
+.albumTop {
+  width: 23vw;
+}
+
+.date,
+.dateTop {
+  width: 20.5vw;
+}
+
+.durationTop svg {
+  height: 15px;
+}
+
+.songItemContainer {
+  background: rgb(22, 26, 29);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(22, 26, 29, 1) 0%,
+    rgba(18, 18, 18, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(22, 26, 29, 1) 0%,
+    rgba(18, 18, 18, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(22, 26, 29, 1) 0%,
+    rgba(18, 18, 18, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#161a1d",endColorstr="#121212",GradientType=1);
+  color: rgba(255, 255, 255, 0.685);
+  font-size: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 10px 30px;
+}
+
+.songItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.songItem:hover {
+  background-color: rgba(255, 255, 255, 0.103);
+  border-radius: 6px;
+}
+
+.title img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.songName {
+  font-size: 20px;
+  color: white;
+}
+
+footer {
+  height: 90px;
+  position: fixed;
+  background-color: #181818;
+  color: rgba(255, 255, 255, 0.685);
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  bottom: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.103);
+  font-family: 'Varela', sans-serif;
+}
+
+footer .left {
+  width: 32vw;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.left img {
+  height: 55px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.left svg {
+  height: 15px;
+}
+
+.left .songName {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.685);
+}
+
+footer .middle {
+  text-align: center;
+}
+
+.icons {
+  color: rgba(255, 255, 255, 0.685);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0;
+}
+
+.icons svg {
+  height: 15px;
+}
+
+.icons img {
+  height: 33px;
+  transition: all 0.4s ease;
+}
+
+.seekBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.685);
+}
+
+.progressBarContainer {
+  width: 33vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+#myProgressBar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 33vw;
+  height: 4px;
+  outline: none;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.685);
+}
+
+#myProgressBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 30px;
+  cursor: pointer;
+  z-index: 3;
+  position: relative;
+}
+
+#myProgressBar::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 30px;
+  background-color: rgba(250, 235, 215, 0);
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+  position: relative;
+}
+
+.progress {
+  width: 0;
+  height: 4px;
+  background-color: #1db954;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#selector {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+#progressBtn {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+}
+
+footer .right {
+  width: 31vw;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.right svg {
+  height: 15px;
+  margin: 0 -5px;
+}
+.soundBarContainer {
+  width: 5vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+#mySoundBar {
+  -webkit-appearance: none;
+  width: 5vw;
+  height: 4px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.685);
+}
+
+#mySoundBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  z-index: 3;
+  position: relative;
+}
+
+#volume {
+  width: 100%;
+  height: 4px;
+  background-color: #1db954;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#volumeSelector {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  bottom: -5px;
+  left: 100%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+#volumeBtn {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+}
